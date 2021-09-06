@@ -44,24 +44,3 @@ namespace Base
 	long GetElapsedProcessTime();
 }
 
-template <typename T>
-void Base::Free(vector<T>& p)
-{
-	vector<T> pTemp;
-	p.swap(pTemp);
-}
-
-template <typename T>
-void Base::Free(vector<vector<T>>& p)
-{
-	vector<vector<T>> pTemp;
-	p.swap(pTemp);
-}
-
-template <typename T>
-void Base::Free(vector<vector<vector<T>>>& p)
-{
-	vector<vector<vector<T>>> pTemp;
-	p.swap(pTemp);
-}
-
